@@ -13,11 +13,12 @@
 
     <link rel="stylesheet" href="/assets/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
 
     <div class="container d-flex flex-column">
-      <div class="" id="header-nav">
+      <div class="d-none d-sm-block" id="header-nav">
         <div class="d-flex mt-4 align-items-center">
           <div class="flex-grow-1"><h3><a href="/">Example site logo</a></h3></div>
           <div class="mx-4"><a href="about_us">About</a></div>
@@ -26,6 +27,32 @@
         </div>
         <hr>
       </div>
+
+
+      <!-- mobile nav-->
+      <div class="" id="mobile-nav">
+        <div class="text-right mt-3">
+          <a href="#" onclick="closeMobileNav()" id="menu-close"><i class="material-icons">
+          close</i></a>
+        </div>
+        <a href="/" onclick="" class="">Home</a><br>
+        <a href="/about_us" onclick="" class="">About</a><br>
+        <a href="/blog" onclick="">Blog</a><br>
+        <a href="/contact" onclick="">Contact</a><br>
+      </div>
+      <!-- end mobile nav-->
+
+      <!-- mobile header -->
+      <div class="d-block d-sm-none">
+        <div class="mobile-header d-flex justify-content-between mt-3">
+          <a href="/">Example site logo</a>
+          <a href="#"><i class="material-icons" id="menu-toggle" onclick="openMobileNav()">menu</i></a>
+        </div>
+        <hr>
+      </div>
+      <!-- end mobile header -->
+
+
         <div id="page-content">
 
           <h1>{{ page.title }}</h1>
@@ -51,6 +78,21 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
 
+    <script type="text/javascript">
+      function openMobileNav() {
+        $("#mobile-nav").css("width", "100%");
+        $("#menu-close").css("opacity", "1");
+        $("body").css("overflow", "hidden");
+      }
+    </script>
+
+    <script type="text/javascript">
+      function closeMobileNav() {
+        $("#mobile-nav").css("width", "0");
+        $("#menu-close").css("opacity", "0");
+        $("body").css("overflow", "visible");
+      }
+    </script>
 
 
   </body>
