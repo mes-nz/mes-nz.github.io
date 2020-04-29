@@ -1,0 +1,11 @@
+name: My Jekyll Website
+url: http://mysite.com
+baseurl:
+title: static website
+
+markdown: kramdown
+kramdown:
+ input: GFM
+ auto_ids: true
+ hard_wrap: false
+ syntax_highlighter: rouge

@@ -1,0 +1,43 @@
+body{
+
+}
+
+.container{
+  min-height: 100vh;
+  /*background-color: lightgrey;*/
+  max-width: 740px;
+}
+
+h3{
+
+}
+
+ul{
+  padding-left: 20px;
+}
+
+#footer{
+  /*background-color: lightpink;*/
+  font-size: 11pt;
+}
+
+#header-nav{
+  /*background-color: lightgreen;*/
+}
+
+#header-nav h3{
+  color: darkblue;
+  text-transform:
+}
+#header-nav h3 a{
+  color: darkblue;
+}
+#header-nav h3 a:hover{
+  color: orange;
+  text-decoration: none;
+}
+
+#header-nav a{
+  color: black;
+
+}
